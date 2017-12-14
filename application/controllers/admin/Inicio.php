@@ -5,7 +5,6 @@ class Inicio extends CI_Controller {
 
 	public function index()
 	{
-      //$this->load->view('admin/inicio');
-		  $this->load->templateAdmin('admin/inicio');
+	  	$this->load->templateAdmin('admin/inicio');
 	}
 }

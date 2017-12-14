@@ -24,13 +24,9 @@ class MY_Loader extends CI_Loader {
     $instance =& get_instance();
 
     $data = array();
-    $content  = $instance->load->view('layout/header', $data, $return);
-    $content .= $instance->load->view($templateName, $vars, $return);
-    $content .= $instance->load->view('layout/footer', $vars, $return);
-
-    if ($return){
-      return $content;
-    }
+    $instance->load->view('layout/header', $data, $return);
+    $instance->load->view($templateName, $vars, $return);
+    $instance->load->view('layout/footer', $vars, $return);
 
   }
 
